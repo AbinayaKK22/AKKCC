@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Library Collection</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: url('background.jpg') no-repeat center center fixed; /* Add your image URL here */
+      background-size: cover; /* This will cover the entire background */
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 10px 40px;
+      max-width: 350px;
+      margin-left: auto;
+      margin-right: auto;
+      min-height: 600px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 1.8rem;
+      margin-bottom: 5px;
+      color: #2c3e50;
+    }
+    header p {
+      color: #7f8c8d;
+      font-style: italic;
+      font-size: 0.9rem;
+    }
+    .books-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+      width: 100%;
+    }
+    .book-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease;
+    }
+    .book-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+    .book-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 1px solid #eee;
+    }
+    .book-info {
+      padding: 12px 15px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #2c3e50;
+      margin: 0 0 6px 0;
+    }
+    .author {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #3498db;
+      margin-bottom: 12px;
+    }
+    .quote {
+      font-style: italic;
+      color: #555;
+      font-size: 0.9rem;
+      line-height: 1.3;
+      margin: 0;
+    }
+  
+    /* Responsive for mobile with max height 600px and width 350px */
+    @media (max-width: 400px) and (max-height: 600px) {
+      body {
+        padding: 12px 8px 30px;
+      }
+      .book-img {
+        height: 160px;
+      }
+      .title {
+        font-size: 1rem;
+      }
+      .author {
+        font-size: 0.85rem;
+      }
+      .quote {
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The BookTok Shelf</h1>
+    <p> For all the girls who found themselves in books </p>
+  </header>
+  <main class="books-container">
+    <article class="book-card">
+      <img class="book-img" src="twisted love.jpg"  />
+      <div class="book-info">
+        <h2 class="title">Twisted Love</h2>
+        <div class="author">Ana Huang</div>
+        <p class="quote">“IF YOU WANTED I WOULD BURN DOWN THE WORLD FOR YOU”  -ALEX VOLKOV</p>
+      </div>
+    </article>
+    <article class="book-card">
+      <img class="book-img" src="twisted games.jpg"  />
+      <div class="book-info">
+        <h2 class="title">Twisted Games</h2>
+        <div class="author">Ana Huang</div>
+        <p class="quote">“YOU AND ME AGAINST THE WORLD PRINCESS” -RHYS LARSEN</p>
+      </div>
+    </article>
+    <article class="book-card">
+      <img class="book-img" src="twisted hate.jpg"  />
+      <div class="book-info">
+        <h2 class="title">Twisted Hate</h2>
+        <div class="author">Ana Huang</div>
+        <p class="quote">"THE POSSIBILITY OF YOU IS BETTER THAN THE REALITY OF ANYONE ELSE"  -JOSH CHEN</p>
+      </div>
+    </article>
+    <article class="book-card">
+      <img class="book-img" src="twisted lies.jpg"  />
+      <div class="book-info">
+        <h2 class="title">Twisted Lies</h2>
+        <div class="author">Ana Huang</div>
+        <p class="quote">“IF MY THOUGHTS WERE CHAOS SHE WAS MY ANCHOR” -CHRISTIAN HARPER</p>
+      </div>
+    </article>
+    <article class="book-card">
+      <img class="book-img" src="king of wrath.jpg"  />
+      <div class="book-info">
+        <h2 class="title">King Of Wrath</h2>
+        <div class="author">Ana Huang</div>
+        <p class="quote">“SHE WAS MY NORTH STAR,THE BRIGHTEST JEWEL IN THE SKY” -DANTE RUSSO</p>
+      </div>
+    </article>
+    <article class="book-card">
+      <img class="book-img" src="king of pride.jpg"  />
+      <div class="book-info">
+        <h2 class="title">King Of Pride</h2>
+        <div class="author">Ana Huang</div>
+        <p class="quote">“SHE LOOKED SO BEAUTIFUL,SO PERFECT, AND SO DAMN MINE” -KAI YOUNG</p>
+      </div>
+    </article>
+    <article class="book-card">
+      <img class="book-img" src="king of greed.jpg"  />
+      <div class="book-info">
+        <h2 class="title">King Of Greed</h2>
+        <div class="author">Ana Huang</div>
+        <p class="quote">“I WOULD SPEND FOREVER BECOMING THE MAN SHE ALWAYS BELIEVED ME TO BE” -DOMINIC DAVENPORT</p>
+      </div>
+    </article>
+    <article class="book-card">
+      <img class="book-img" src="king of sloth.jpg" />
+      <div class="book-info">
+        <h2 class="title">King Of Sloth</h2>
+        <div class="author">Ana Huang</div>
+        <p class="quote">“WHENEVER I WAS DROWNING,SHE WAS MY ANCHOR IN THE STORM”</p>
+      </div>
+    </article>
+    <article class="book-card">
+      <img class="book-img" src="king of envy.jpg"/>
+      <div class="book-info">
+        <h2 class="title">King Of Envy</h2>
+        <div class="author">Ana Huang</div>
+        <p class="quote">“IF YOU WERE MY FIANCÉE I WOULDN'T LOOK AT ANOTHER WOMAN” -VUK MARKOVIC</p>
+      </div>
+    </article>
+    <article class="book-card">
+      <img class="book-img" src="SHATTER ME SERIES.jpg" />
+      <div class="book-info">
+        <h2 class="title">The Shatter Me Series</h2>
+        <div class="author">Tahereh Mafi</div>
+        <p class="quote">“TO THE WORLD SHE IS FORMABLE.
+                          TO ME?
+                          SHE IS THE WORLD” -AARON WARNER</p>
+      </div>
+    </article>
+    <article class="book-card">
+      <img class="book-img" src="DREAMLAND.jpg" />
+      <div class="book-info">
+        <h2 class="title">Dreamland Billionaires</h2>
+        <div class="author">Lauren Asher</div>
+        <p class="quote">“TO ALL THE GIRLS WHO DREAM OF MEETING A PRINCE BUT END UP FALLING FOR THE MISUNDERSTOOD VILLAIN” - LAUREN ASHER</p>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
+
+
